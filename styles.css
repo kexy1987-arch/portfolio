@@ -1,0 +1,126 @@
+html, body {
+    background-color: rgb(200, 182, 155);
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 400px;
+}
+
+section {
+    padding-top: 3rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects > div {
+    border-radius: 30px;
+    padding: 0 10px;
+    width: 25rem;
+    padding: 2rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.465);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.692);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links > * {
+    background-color: black;
+    color: whitesmoke;
+    width: 11rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 3rem;
+}
+
+nav {
+    position: fixed;
+    background-color: rgba(165, 42, 42, 0.657);
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    height: 2rem;
+}
+
+nav a {
+    color: white;
+}
+
+main > * {
+    margin-bottom: 10rem;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.skills > h3 {
+    grid-column: span 2;
+}
+
+.skills div {
+    background-color: antiquewhite;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.386);
+}
+
+h3 {
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(165, 42, 42, 0.529);
+    height: 3rem;
+}
+
+footer > a {
+    padding: 1rem 0.2rem;
+    color: white;
+    height: fit-content;
+}
